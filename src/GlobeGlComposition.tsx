@@ -48,7 +48,7 @@ export const GlobeGlComposition = () => {
 	});
 
 	const timeMovement = Math.round(
-		interpolate(frame, [40, 160], [0, 240], {
+		interpolate(frame, [40, 500], [0, 500], {
 			extrapolateLeft: 'clamp',
 			extrapolateRight: 'clamp',
 		})
