@@ -1,13 +1,15 @@
-# Remotion video
+# A remotion project using globe.gl
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.gif">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
+### If you find this project useful, you can support me by buying me a coffee :)
+
+<a href="https://www.buymeacoffee.com/alexfernandez"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=alexfernandez&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
+
+
+### This project is meant to recreate globe.gl sattelite example.
+
+[Sattelite globe.gl](https://github.com/vasturiano/globe.gl/blob/master/example/satellites/index.html)
+
+
 
 Welcome to your Remotion project!
 
