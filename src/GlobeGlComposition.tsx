@@ -22,7 +22,6 @@ interface SatData {
 const dateArray = generateDateArray(1500);
 export const GlobeGlComposition = () => {
 	const [handle] = useState(() => delayRender());
-	const [satHandle] = useState(() => delayRender());
 	const globeEl = useRef<GlobeMethods | undefined>(undefined);
 	const [satData, setSatData] = useState<SatData[]>([]);
 	const [globeRadius, setGlobeRadius] = useState<number | undefined>();
@@ -48,10 +47,12 @@ export const GlobeGlComposition = () => {
 		extrapolateRight: 'clamp',
 	});
 
-	const timeMovement = interpolate(frame, [40, 160], [0, 240], {
-		extrapolateLeft: 'clamp',
-		extrapolateRight: 'clamp',
-	});
+	const timeMovement = Math.round(
+		interpolate(frame, [40, 160], [0, 240], {
+			extrapolateLeft: 'clamp',
+			extrapolateRight: 'clamp',
+		})
+	);
 
 	const startRadius = interpolate(
 		frame,
@@ -121,7 +122,6 @@ export const GlobeGlComposition = () => {
 					.slice(0, 1500);
 
 				setSatData(satData);
-				continueRender(satHandle);
 			})
 			.catch((err) => {
 				cancelRender(err);
@@ -131,6 +131,7 @@ export const GlobeGlComposition = () => {
 	const objectsData = useMemo(() => {
 		if (!satData) return [];
 		const timeDate = dateArray[timeMovement];
+
 		// Update satellite positions
 		const gmst = satellite.gstime(timeDate);
 		return satData.map((d) => {
