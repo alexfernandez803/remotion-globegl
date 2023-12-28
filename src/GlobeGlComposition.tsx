@@ -1,6 +1,6 @@
 import {useMemo} from 'react';
 import {useRef} from 'react';
-import {interpolate, spring} from 'remotion';
+import {cancelRender, interpolate, spring} from 'remotion';
 import {useVideoConfig} from 'remotion';
 import {useCurrentFrame} from 'remotion';
 import {continueRender} from 'remotion';
@@ -22,6 +22,7 @@ interface SatData {
 const dateArray = generateDateArray(1500);
 export const GlobeGlComposition = () => {
 	const [handle] = useState(() => delayRender());
+	const [satHandle] = useState(() => delayRender());
 	const globeEl = useRef<GlobeMethods | undefined>(undefined);
 	const [satData, setSatData] = useState<SatData[]>([]);
 	const [globeRadius, setGlobeRadius] = useState<number | undefined>();
@@ -120,6 +121,10 @@ export const GlobeGlComposition = () => {
 					.slice(0, 1500);
 
 				setSatData(satData);
+				continueRender(satHandle);
+			})
+			.catch((err) => {
+				cancelRender(err);
 			});
 	}, []);
 
