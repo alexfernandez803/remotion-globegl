@@ -4,16 +4,11 @@
 
 <a href="https://www.buymeacoffee.com/alexfernandez"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=alexfernandez&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
 
+### This project is meant to recreate globe.gl satellite example.
 
-### This project is meant to recreate globe.gl sattelite example.
+[Satellite globe.gl](https://github.com/vasturiano/globe.gl/blob/master/example/satellites/index.html)
 
-[Sattelite globe.gl](https://github.com/vasturiano/globe.gl/blob/master/example/satellites/index.html)
-
-
-
-https://github.com/alexfernandez803/remotion-globegl/assets/7582277/5bd0468f-5791-4d63-b058-2c7567bdf6f6
-
-
+https://github.com/alexfernandez803/remotion-globegl/assets/1629785/df4662d3-47bb-4c1b-aa77-1a83045f1724
 
 Welcome to your Remotion project!
 
@@ -58,4 +53,3 @@ Found an issue with Remotion? [File an issue here](https://github.com/remotion-d
 ## License
 
 Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
-# remotion-globegl

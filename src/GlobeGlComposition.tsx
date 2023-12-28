@@ -1,6 +1,6 @@
 import {useMemo} from 'react';
 import {useRef} from 'react';
-import {interpolate, spring} from 'remotion';
+import {cancelRender, interpolate, spring} from 'remotion';
 import {useVideoConfig} from 'remotion';
 import {useCurrentFrame} from 'remotion';
 import {continueRender} from 'remotion';
@@ -47,10 +47,12 @@ export const GlobeGlComposition = () => {
 		extrapolateRight: 'clamp',
 	});
 
-	const timeMovement = interpolate(frame, [40, 160], [0, 240], {
-		extrapolateLeft: 'clamp',
-		extrapolateRight: 'clamp',
-	});
+	const timeMovement = Math.round(
+		interpolate(frame, [40, 160], [0, 240], {
+			extrapolateLeft: 'clamp',
+			extrapolateRight: 'clamp',
+		})
+	);
 
 	const startRadius = interpolate(
 		frame,
@@ -120,12 +122,16 @@ export const GlobeGlComposition = () => {
 					.slice(0, 1500);
 
 				setSatData(satData);
+			})
+			.catch((err) => {
+				cancelRender(err);
 			});
 	}, []);
 
 	const objectsData = useMemo(() => {
 		if (!satData) return [];
 		const timeDate = dateArray[timeMovement];
+
 		// Update satellite positions
 		const gmst = satellite.gstime(timeDate);
 		return satData.map((d) => {
