@@ -11,6 +11,10 @@
 
 
 
+https://github.com/alexfernandez803/remotion-globegl/assets/7582277/5bd0468f-5791-4d63-b058-2c7567bdf6f6
+
+
+
 Welcome to your Remotion project!
 
 ## Commands
