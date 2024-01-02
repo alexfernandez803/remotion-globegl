@@ -13,6 +13,7 @@
 	"dependencies": {
 		"@remotion/cli": "4.0.82",
 		"@remotion/zod-types": "4.0.82",
+		"@turf/turf": "^6.5.0",
 		"globe.gl": "^2.32.1",
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0",
