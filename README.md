@@ -10,6 +10,12 @@
 
   https://github.com/alexfernandez803/remotion-globegl/assets/1629785/df4662d3-47bb-4c1b-aa77-1a83045f1724
 
+#### [Hexed Polygon](https://github.com/vasturiano/globe.gl/blob/master/example/hexed-polygons/index.html)
+
+  https://github.com/alexfernandez803/remotion-globegl/assets/7582277/243f8cf0-609e-4b0d-89e0-0710305709d1
+
+
+
 Welcome to your Remotion project!
 
 ## Commands
