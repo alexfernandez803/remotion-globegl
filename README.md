@@ -6,7 +6,7 @@
 
 ### This project is meant to recreate globe.gl examples.
 
-*[Satellite globe.gl](https://github.com/vasturiano/globe.gl/blob/master/example/satellites/index.html)
+#### [Satellite globe.gl](https://github.com/vasturiano/globe.gl/blob/master/example/satellites/index.html)
 
   https://github.com/alexfernandez803/remotion-globegl/assets/1629785/df4662d3-47bb-4c1b-aa77-1a83045f1724
 
