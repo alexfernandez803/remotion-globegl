@@ -14,6 +14,7 @@
 		"@remotion/cli": "4.0.82",
 		"@remotion/zod-types": "4.0.82",
 		"@turf/turf": "^6.5.0",
+		"d3": "^7.8.5",
 		"globe.gl": "^2.32.1",
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0",
