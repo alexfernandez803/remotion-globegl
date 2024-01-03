@@ -4,11 +4,17 @@
 
 <a href="https://www.buymeacoffee.com/alexfernandez"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=alexfernandez&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
 
-### This project is meant to recreate globe.gl satellite example.
+### This project is meant to recreate globe.gl examples.
 
-[Satellite globe.gl](https://github.com/vasturiano/globe.gl/blob/master/example/satellites/index.html)
+#### [Satellite globe.gl](https://github.com/vasturiano/globe.gl/blob/master/example/satellites/index.html)
 
-https://github.com/alexfernandez803/remotion-globegl/assets/1629785/df4662d3-47bb-4c1b-aa77-1a83045f1724
+  https://github.com/alexfernandez803/remotion-globegl/assets/1629785/df4662d3-47bb-4c1b-aa77-1a83045f1724
+
+#### [Hexed Polygon](https://github.com/vasturiano/globe.gl/blob/master/example/hexed-polygons/index.html)
+
+  https://github.com/alexfernandez803/remotion-globegl/assets/7582277/243f8cf0-609e-4b0d-89e0-0710305709d1
+
+
 
 Welcome to your Remotion project!
 
