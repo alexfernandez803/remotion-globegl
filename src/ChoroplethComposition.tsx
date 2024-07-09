@@ -1,6 +1,6 @@
 import {useMemo} from 'react';
 import {useRef} from 'react';
-import {cancelRender, interpolate, spring, staticFile, random} from 'remotion';
+import {cancelRender, interpolate, spring, staticFile,} from 'remotion';
 import {useVideoConfig} from 'remotion';
 import {useCurrentFrame} from 'remotion';
 import {continueRender} from 'remotion';

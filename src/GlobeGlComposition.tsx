@@ -1,6 +1,6 @@
 import {useMemo} from 'react';
 import {useRef} from 'react';
-import {cancelRender, interpolate, spring} from 'remotion';
+import {cancelRender, interpolate, spring, staticFile} from 'remotion';
 import {useVideoConfig} from 'remotion';
 import {useCurrentFrame} from 'remotion';
 import {continueRender} from 'remotion';
@@ -102,7 +102,7 @@ export const GlobeGlComposition = () => {
 
 	useEffect(() => {
 		// Load satellite data
-		fetch('//unpkg.com/globe.gl/example/datasets/space-track-leo.txt')
+		fetch(staticFile("space-track-leo.txt"))
 			.then((r) => r.text())
 			.then((rawData) => {
 				const tleData = rawData
@@ -181,9 +181,9 @@ export const GlobeGlComposition = () => {
 					alpha: false,
 					antialias: false,
 				}}
-				globeImageUrl="https://unpkg.com/three-globe@2.18.0/example/img/earth-blue-marble.jpg"
-				bumpImageUrl="https://unpkg.com/three-globe@2.18.0/example/img/earth-topology.png"
-				backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
+				globeImageUrl={staticFile("earth-blue-marble.jpg")}
+				bumpImageUrl={staticFile("earth-topology.png")}
+				backgroundImageUrl={staticFile("night-sky.png")}
 				animateIn={false}
 				objectsData={objectsData}
 				objectLat="lat"
