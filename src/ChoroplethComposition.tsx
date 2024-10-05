@@ -1,6 +1,6 @@
 import {useMemo} from 'react';
 import {useRef} from 'react';
-import {cancelRender, interpolate, spring, staticFile,} from 'remotion';
+import {cancelRender, interpolate, spring, staticFile} from 'remotion';
 import {useVideoConfig} from 'remotion';
 import {useCurrentFrame} from 'remotion';
 import {continueRender} from 'remotion';
@@ -89,8 +89,8 @@ export const ChoroplethComposition = () => {
 					alpha: false,
 					antialias: false,
 				}}
-				globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-				backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
+				globeImageUrl={staticFile('earth-night.jpg')}
+				backgroundImageUrl={staticFile('night-sky.png')}
 				lineHoverPrecision={0}
 				polygonsData={countries.features.filter(
 					(d) => d.properties.ISO_A2 !== 'AQ'

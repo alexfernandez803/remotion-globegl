@@ -86,7 +86,7 @@ export const HexPolygonComposition = () => {
 					alpha: false,
 					antialias: false,
 				}}
-				globeImageUrl="//unpkg.com/three-globe/example/img/earth-dark.jpg"
+				globeImageUrl={staticFile('earth-dark.jpg')}
 				hexPolygonsData={countries.features}
 				hexPolygonResolution={3}
 				hexPolygonMargin={0.3}
